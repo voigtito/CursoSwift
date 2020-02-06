@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         var peso:Double! = Double(pesoKg.text!)
         var altura:Double! = Double(alturaMetros.text!)
-        var result:Double! = peso / altura
+        var result:Double! = peso / pow(altura, 2)
         
         resultadoIMC.text = String(result)
        
